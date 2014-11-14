@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DesignableViewController" customModule="IBDesignableExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="W62-q4-BKQ" id="SL9-R5-772"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="W62-q4-BKQ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-BU-Vfr" customClass="BlueButton" customModule="IBDesignableExamples" customModuleProvider="target">
+                    <rect key="frame" x="54" y="391" width="212" height="39"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="buttonTitle"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tapBlueButton" destination="-1" eventType="touchUpInside" id="JbX-SY-n62"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdf" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhP-Cl-Y02" customClass="LocalizedLabel" customModule="IBDesignableExamples" customModuleProvider="target">
+                    <rect key="frame" x="87" y="50" width="147" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="labelTitle"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GhP-Cl-Y02" firstAttribute="top" secondItem="W62-q4-BKQ" secondAttribute="top" constant="50" id="5ue-xU-sAf"/>
+                <constraint firstAttribute="centerX" secondItem="Zeo-BU-Vfr" secondAttribute="centerX" id="Cgu-Dr-SjK"/>
+                <constraint firstAttribute="bottom" secondItem="Zeo-BU-Vfr" secondAttribute="bottom" constant="50" id="hqJ-0Q-PDf"/>
+                <constraint firstAttribute="centerX" secondItem="GhP-Cl-Y02" secondAttribute="centerX" id="pwO-Tl-5fr"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="260" y="335"/>
+        </view>
+    </objects>
+</document>

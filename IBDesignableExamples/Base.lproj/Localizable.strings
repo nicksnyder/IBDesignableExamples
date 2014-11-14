@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  IBDesignableExamples
+
+  Created by Nick Snyder on 11/13/14.
+  Copyright (c) 2014 Example. All rights reserved.
+*/
+
+"labelTitle" = "Localized label title";
+
+"buttonTitle" = "Localized button title";
